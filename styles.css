@@ -1,0 +1,92 @@
+/* General Styling */
+
+/* Font Used */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* Page Dimensions */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* -- */
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    color: rgb(179, 25, 25);
+}
+
+.title {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+/* DESKTOP NAV */
+
+.menu-links {
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: row;
+}
+
+.menu-links li {
+    display: inline;
+    list-style: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.section__pic-container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section__text {
+    align-self: center;
+    text-align: center;   
+}
+
+.section__text p {
+    font-weight: 600;
+}
+
+.section__text__p1 {
+    text-align: center;
+}
+
+.setion__text__p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
