@@ -6,11 +6,15 @@
 
 /* Page Dimensions */
 * {
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 /* -- */
+
+.logo {
+    width: 85px;
+    height: auto;
+}
 
 body {
     background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1517&q=80);
@@ -18,9 +22,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    color: rgb(179, 25, 25);
-}
 
 .title {
     color: white;
@@ -36,10 +37,26 @@ p {
 
 /* DESKTOP NAV */
 
+nav {
+    box-shadow: 0 0 12px -2px black;
+    position:relative;
+    left: 0;
+    right: 0;
+    align-items: center;
+    background-color: #a39d9d;
+    color: aliceblue;
+    display: flex;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .menu-links {
     justify-content: flex-end;
     text-align: center;
     flex-direction: row;
+    color: white;
 }
 
 .menu-links li {
@@ -66,10 +83,12 @@ section {
     height: 400px;
     width: 400px;
     margin: auto 0;
+    border: 50px;
+    padding: 10px;
 }
 
 .section__text {
-    align-self: center;
+    align-self:center;
     text-align: center;   
 }
 
