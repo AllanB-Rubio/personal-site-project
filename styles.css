@@ -1,15 +1,9 @@
-/* General Styling */
 
 /* Font Used */
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400;500;600&display=swap');
 
 
-/* Page Dimensions */
-* {
-  box-sizing: border-box;
-}
-
-
+/* AR logo  */
 .logo {
     padding-top: 4px;
     width: 85px;
@@ -19,7 +13,15 @@
 body {
     background: linear-gradient(30deg, rgb(56, 55, 55), rgb(31, 19, 57));
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+.container {
+    max-width: 1200px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add some padding */
+  }
 
 
 .title {
@@ -28,12 +30,12 @@ body {
 
 
 p {
-    color: rgb(255, 255, 255);
+    font-size: 2.3vh;
+    line-height: 1.6;
+    color: rgb(136, 162, 164);
 }
 
 /* DESKTOP NAV */
-
-
 
 a {
     color: black;
@@ -44,7 +46,7 @@ a {
 a:hover {
     color: grey;
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181,181,181);
     transition: .6s;
 
@@ -96,11 +98,14 @@ li a {
     height: 80vh;
 }
 
-.section__pic-container {
+/* Home Section Photo */
+img, .section__pic-container {
     display: flex;
     height: 400px;
     width: 400px;
     margin: auto 0;
+    box-shadow: 0px 0px 5px #ffffff4b;
+    border-radius: 50%;
 }
 
 .section__text {
@@ -127,10 +132,51 @@ li a {
     color: black;
 }
 
-img {
-    border-radius: 50%;
+
+
+h1 {
+    font-size: 5vh;
+}
+h2 {
+    font-size: 5vh;
 }
 
+
+
+/* ABOUT ME */
+.about-section {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.about-me-pic {
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+    margin-right: 3rem;
+}
+
+.about-me-title {
+    text-align: center;
+}
+
+/* Portfolio */
+
+.portfolio-title {
+    text-align: center;
+}
+
+.project-1-text {
+    text-align: center;
+}
+
+/* Contact ME */
+
+.contact-me-title {
+    text-align: center;
+}
 
 /* SOCIALS */
 
@@ -184,6 +230,7 @@ img {
     transform: translate(0,-10%);
 }
 
+
 /* Facebook */
 .social-icons ul li:nth-child(1) a:hover {
     background-color: rgb(14, 14, 211);
@@ -201,16 +248,26 @@ img {
     background-color: rgb(36,41,46);
 }
 
+/* Contact Me Form  */
+
 /* Style inputs with type="text", select elements and textareas */
+
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
+    width: 100%; 
+    padding: 12px; 
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+    margin-top: 6px; 
+    margin-bottom: 16px; 
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* When clicking inside form */
+  input[type=text]:focus, select:focus, textarea:focus {
+    border-color: #00b894; 
+    box-shadow: 0 0 10px #00b894; 
+    outline: none; 
   }
   
   /* Submit button */
