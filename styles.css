@@ -33,6 +33,23 @@ p {
 
 /* DESKTOP NAV */
 
+
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181,181,181);
+    transition: .6s;
+
+}
+
 nav {
     border-radius: 5px;
     box-shadow: 0 0 12px -2px black;
@@ -47,26 +64,27 @@ nav {
     justify-content: space-between;
 }
 
-.menu-links {
-    text-align: center;
+.desktop-nav, .menu-links {
     flex-direction: row;
-    gap: 2rem;
+    gap: 3rem;
     list-style: none;
     font-size: 1.2rem;
+    padding-right: 30px;
+    
 }
 
 .menu-links li {
     display: inline;
     list-style: none;
+    margin-right: 2rem
     
+
 }
 
-.menu-links li:hover {
-    background-color: #a39d9d;
-}
 
 li a {
     color: rgb(160, 3, 3);
+
 }
 
 /* PROFILE SECTION */
@@ -111,9 +129,8 @@ li a {
 
 img {
     border-radius: 50%;
-    
-   
 }
+
 
 /* SOCIALS */
 
@@ -183,3 +200,38 @@ img {
 .social-icons ul li:nth-child(4) a:hover {
     background-color: rgb(36,41,46);
 }
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Submit button */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, different color shows */
+  input[type=submit]:hover {
+    background-color: rgb(160, 3, 3);
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #c9c8c8a9;
+    padding: 20px;
+  }
+  
