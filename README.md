@@ -1,5 +1,10 @@
-# personal-site-project
+# Personal Site Project
 
-#Welcome to my project for my Personal Website 
+## Description
 
-#Will keep updating this project to test new skills
+- Welcome to my project for my Personal Website
+- Will keep updating this project to test new skills
+
+## Author
+
+Allan Rubio

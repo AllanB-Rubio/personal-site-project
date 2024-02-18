@@ -1,294 +1,353 @@
-
 /* Font Used */
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Poppins:wght@300;400;500;600&display=swap");
 
 /* AR logo  */
+
 .logo {
-    padding-top: 4px;
-    width: 85px;
-    height:auto;
+  padding-top: 4px;
+  width: 85px;
+  height: auto;
 }
 
 body {
-    background: linear-gradient(30deg, rgb(56, 55, 55), rgb(31, 19, 57));
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  background: linear-gradient(30deg, rgb(56, 55, 55), rgb(31, 19, 57));
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
-.container {
-    max-width: 1200px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Center the container horizontally */
-    padding: 20px; /* Add some padding */
-  }
-
-
+/* Home Page */
 .title {
-    color: white;
+  color: white;
 }
-
 
 p {
-    font-size: 2.3vh;
-    line-height: 1.6;
-    color: rgb(136, 162, 164);
+  font-size: 2.3vh;
+  line-height: 1.6;
+  color: rgb(136, 162, 164);
 }
 
-/* DESKTOP NAV */
+/* NAV BAR */
 
-a {
-    color: black;
-    text-decoration: none;
-    text-decoration-color: white;
-}
+/* Hover effects on home, about, portfolio, contact me */
 
-a:hover {
-    color: grey;
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    text-decoration-color: rgb(181,181,181);
-    transition: .6s;
-
-}
 
 nav {
     border-radius: 5px;
     box-shadow: 0 0 12px -2px black;
-    position:relative;
+    position: relative;
     left: 0;
     right: 0;
     align-items: center;
-    background-color:transparent;
+    background-color: transparent;
     display: flex;
     height: 80px;
     padding: 10px;
     justify-content: space-between;
 }
 
-.desktop-nav, .menu-links {
-    flex-direction: row;
-    gap: 3rem;
-    list-style: none;
-    font-size: 1.2rem;
-    padding-right: 30px;
-    
+a:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: rgba(181, 181, 181, 0.352);
+  transition: 0.6s;
+}
+
+.desktop-av,
+.menu-links {
+  flex-direction: row;
+  gap: 3rem;
+  font-size: 1.2rem;
+  padding-right: 30px;
 }
 
 .menu-links li {
-    display: inline;
-    list-style: none;
-    margin-right: 2rem
-    
-
+  display: inline;
+  list-style: none;
+  margin-right: 2rem;
 }
 
-
 li a {
-    color: rgb(160, 3, 3);
-
+  color: rgb(160, 3, 3);
 }
 
 /* PROFILE SECTION */
 
 #profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
 }
 
 /* Home Section Photo */
-img, .section__pic-container {
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-    box-shadow: 0px 0px 5px #ffffff4b;
-    border-radius: 50%;
+img,
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+  box-shadow: 0px 0px 5px #ffffff4b;
+  border-radius: 50%;
 }
 
 .section__text {
-    align-self: center;
-    text-align: center;   
+  align-self: center;
+  text-align: center;
 }
 
 .section__text p {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .section__text__p1 {
-    text-align: center;
+  text-align: center;
 }
 
 .setion__text__p2 {
-    font-size: 1.75rem;
-    margin-bottom: 1rem;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
 }
 
 .title {
-    font-size: 3rem;
-    text-align: center;
-    color: black;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
 }
-
-
 
 h1 {
-    font-size: 5vh;
+  font-size: 5vh;
 }
+
 h2 {
-    font-size: 5vh;
+  font-size: 5vh;
 }
-
-
 
 /* ABOUT ME */
-.about-section {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    margin-top: 20px;
-}
 
-.about-me-pic {
-    float: left;
-    max-width: 50%;
-    max-height: 50%;
-    margin-right: 3rem;
-}
 
 .about-me-title {
-    text-align: center;
+  text-align: center;
 }
+
+.grid-container {
+  max-width: 1000px;
+  height: 650px;
+  margin: 0 auto;
+  display: flexbox;
+}
+
+
+.about-me-pic {
+  float: left;
+  max-width: 50%;
+  max-height: 50%;
+  margin-right: 3rem;
+}
+
 
 /* Portfolio */
 
 .portfolio-title {
-    text-align: center;
+  text-align: center;
 }
 
-.project-1-text {
-    text-align: center;
+.portfolio-text {
+  text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+    padding-bottom: 4rem;
+    
+
+}
+
+/* Buttons */
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-color {
+    border: rgba(53, 53, 53, 0.83) 0.1rem solid;
+}
+
+.btn-color:hover{
+    cursor: pointer;
+}
+
+.btn-color {
+    background: rgb(53,53,53);
+    color: white;
+}
+
+.btn-color:hover {
+    background: rgb(0,0,0);
 }
 
 /* Contact ME */
 
 .contact-me-title {
-    text-align: center;
+  text-align: center;
 }
 
 /* SOCIALS */
 
 .social-icons {
-    display: table;
-    margin: 0 auto;
-    padding-top: 40px;
-
+  display: table;
+  margin: 0 auto;
+  padding-top: 40px;
 }
 
 .social-icons ul {
-    position:relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-bottom: 0;
 }
 
 .social-icons ul li {
-    list-style: none;
-    margin: 0 15px;
+  list-style: none;
+  margin: 0 15px;
 }
 
 .social-icons ul li .fab {
-    font-size: 35px;
-    line-height: 60px;
-    transition: .3s;
-    color: #a39d9d;
+  font-size: 35px;
+  line-height: 60px;
+  transition: 0.3s;
+  color: #a39d9d;
 }
 
 .social-icons ul li .fab:hover {
-    color:#fff;
+  color: #fff;
 }
 
 .social-icons ul li a:hover {
-    color:white;
+  color: white;
 }
 
 .social-icons ul li a {
-    position: relative;
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
-    transition: .6s;
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+  transition: 0.6s;
 }
 
 .social-icons ul li a:hover {
-    transform: translate(0,-10%);
+  transform: translate(0, -10%);
 }
-
 
 /* Facebook */
 .social-icons ul li:nth-child(1) a:hover {
-    background-color: rgb(14, 14, 211);
+  background-color: rgb(14, 14, 211);
 }
 /* Instagram */
 .social-icons ul li:nth-child(2) a:hover {
-    background-color: rgb(252, 99, 252);
+  background-color: rgb(252, 99, 252);
 }
 /* Linkedin */
 .social-icons ul li:nth-child(3) a:hover {
-    background-color: rgb(10, 102, 194);
+  background-color: rgb(10, 102, 194);
 }
 /* Github */
 .social-icons ul li:nth-child(4) a:hover {
-    background-color: rgb(36,41,46);
+  background-color: rgb(36, 41, 46);
 }
 
 /* Contact Me Form  */
 
-/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
-input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Padding and width stays in place */
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
+/* When clicking inside form */
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #00b894;
+  box-shadow: 0 0 10px #00b894;
+  outline: none;
+}
 
-  /* When clicking inside form */
-  input[type=text]:focus, select:focus, textarea:focus {
-    border-color: #00b894; 
-    box-shadow: 0 0 10px #00b894; 
-    outline: none; 
-  }
-  
-  /* Submit button */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, different color shows */
-  input[type=submit]:hover {
-    background-color: rgb(160, 3, 3);
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #c9c8c8a9;
-    padding: 20px;
-  }
-  
+/* Submit button */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, different color shows */
+input[type="submit"]:hover {
+  background-color: rgb(160, 3, 3);
+  transition: all 300ms ease;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #c9c8c8a9;
+  padding: 20px;
+}
+
+@media (max-width:600px) {
+     body {
+        background: linear-gradient(30deg, rgb(0, 0, 0), rgb(111, 0, 0));
+     }
+
+     a:hover {
+        color: rgb(106, 103, 103);
+        text-decoration: underline;
+        text-underline-offset: 0.5rem;
+        text-decoration-color: rgba(0, 0, 0, 0.223);
+        transition:  0.6s;
+      }
+      
+      .desktop-av,
+      .menu-links {
+        flex-direction:row-reverse;
+        gap: 3rem;
+        font-size: 1.2rem;
+        padding-right: 30px;
+      }
+      
+      
+      li a {
+        color: rgb(9, 9, 9);
+      }
+}
